@@ -18,9 +18,6 @@ RUN rm -rf /lib/systemd/system/getty*;
 RUN apt-get update
 RUN apt-get install -y apt-utils
 
-# install typical requirements for testing
-RUN apt-get install -y procps ssl-cert ca-certificates apt-transport-https python sudo curl net-tools vim iproute unzip vim wget git
-
 
 # cleanup
 RUN apt-get clean
